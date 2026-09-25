@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+void main()
+{
+    int num, square, root = 0;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    square = num * num;
+
+    while ((root + 1) * (root + 1) <= num)
+    {
+        root++;
+    }
+
+    printf("Square = %d\n", square);
+    printf("Square Root = %d\n", root);
+}
+
+
